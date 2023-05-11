@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit {
   constructor(private router: Router) { }
 
   goToHome = () => {
-    this.router.navigateByUrl("/hotels");
+    this.router.navigateByUrl('/hotels');
   }
   ngOnInit(): void {
   }

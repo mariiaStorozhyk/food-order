@@ -10,14 +10,14 @@ import { ICartItem } from '../models/cart-item';
 })
 export class HotelService {
 
-  private url: string = '/assets/api/data.json';
+  private url = '/assets/api/data.json';
   public hasUserName = false;
   public userName = '';
   public cartItems = [];
   public customError = {
     status: 500,
     message: 'Sorry! Something went wrong :('
-  }
+  };
 
   userNameChange: Subject<string> = new Subject<string>();
 
@@ -49,7 +49,7 @@ export class HotelService {
   }
 
   public removeCartItem = (item) => {
-    this.cartItems = this.cartItems.filter((menu) => menu.id != item.id);
+    this.cartItems = this.cartItems.filter((menu) => menu.id !== item.id);
   }
 
 }

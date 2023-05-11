@@ -10,8 +10,8 @@ export class CartItemComponent implements OnInit {
   @Input() public cartItems;
 
   @Output() removeQuantityEvent = new EventEmitter();
-  @Output() addQuantityEvent = new EventEmitter(); 
-  @Output() removeItemEvent = new EventEmitter(); 
+  @Output() addQuantityEvent = new EventEmitter();
+  @Output() removeItemEvent = new EventEmitter();
 
   constructor() { }
 
